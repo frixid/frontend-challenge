@@ -1,4 +1,3 @@
-# Landbot frontend challenge
 ## Description
 The cost of rendering thousands of elements in the DOM is very high. The objective of this challenge is to offer a solution to this problem.
 
