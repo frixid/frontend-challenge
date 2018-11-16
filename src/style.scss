@@ -1,0 +1,28 @@
+$grid-size: 4000px;
+$grid-item-size: 100px;
+$grid-item-amount: $grid-size / $grid-item-size;
+
+html, body {
+  overflow: auto;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: repeat($grid-item-amount, $grid-item-size);
+  grid-template-rows: repeat($grid-item-amount, $grid-item-size);
+  width: $grid-size;
+  height: $grid-size;
+  overflow: scroll;
+}
+
+.grid-item {
+   display: inline-block;
+  width: $grid-item-size;
+  height: $grid-item-size;
+  border: 1px solid black;
+  transition: background-color 5s ease;
+
+  &.active {
+    background-color: turquoise;
+  }
+}
